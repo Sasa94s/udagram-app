@@ -1,0 +1,3 @@
+[submodule "udagram-frontend"]
+	path = udagram-frontend
+	url = git@github.com:Sasa94s/udagram-frontend.git
