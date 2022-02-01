@@ -7,3 +7,6 @@
 [submodule "udagram-api/users-service"]
 	path = udagram-api/users-service
 	url = git@github.com:Sasa94s/udagram-api-users-service.git
+[submodule "udagram-reverseproxy"]
+	path = udagram-reverseproxy
+	url = git@github.com:Sasa94s/udagram-reverseproxy.git
