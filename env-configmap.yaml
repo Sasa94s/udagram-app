@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: arn:aws:s3:::k8s-udagram-bucket
+  AWS_PROFILE: default
+  AWS_REGION: eu-east-1
+  JWT_SECRET: udagramjwtsecret
+  POSTGRES_DB: udagram_db
+  POSTGRES_HOST: k8s-udagram-database.c5vvns71pskb.us-east-1.rds.amazonaws.com
+  URL: http://a3d585197e2a64e86bd7eed6d122d3c2-220395696.us-east-1.elb.amazonaws.com:8080
+  PORT: "8000"
+metadata:
+  name: env-config
