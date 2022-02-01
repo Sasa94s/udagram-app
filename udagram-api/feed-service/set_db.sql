@@ -1,1 +1,1 @@
-CREATE DATABASE feeds_db;
+CREATE DATABASE udagram_db;

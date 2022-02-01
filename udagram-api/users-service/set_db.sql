@@ -1,1 +1,1 @@
-CREATE DATABASE users_db;
+CREATE DATABASE udagram_db;
