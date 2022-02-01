@@ -1,3 +1,6 @@
 [submodule "udagram-frontend"]
 	path = udagram-frontend
 	url = git@github.com:Sasa94s/udagram-frontend.git
+[submodule "udagram-api/feed-service"]
+	path = udagram-api/feed-service
+	url = https://github.com/Sasa94s/udagram-api-feed-service
