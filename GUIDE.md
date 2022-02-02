@@ -102,16 +102,18 @@ kubectl apply -f env-configmap.yaml
 ```
 Create `deployments` and `services`:
 ```shell
+
 kubectl apply -f udagram-api/feed-service/deployment.yaml
-kubectl apply -f udagram-api/feed-service/service.yaml
-
 kubectl apply -f udagram-api/users-service/deployment.yaml
-kubectl apply -f udagram-api/users-service/service.yaml
-
 kubectl apply -f udagram-frontend/deployment.yaml
-kubectl apply -f udagram-frontend/service.yaml
-
 kubectl apply -f udagram-reverseproxy/deployment.yaml
+
+kubectl apply -f autoscaling-config.yaml
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+kubectl apply -f udagram-api/feed-service/service.yaml
+kubectl apply -f udagram-api/users-service/service.yaml
+kubectl apply -f udagram-frontend/service.yaml
 kubectl apply -f udagram-reverseproxy/service.yaml
 ```
 Make `udagram-frontend` publicly accessible with `targetPort`:
